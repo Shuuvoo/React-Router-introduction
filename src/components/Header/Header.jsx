@@ -13,6 +13,7 @@ const Header = () => {
         {/* <a href="/contact">Contact</a> */}
         <Link to="/about">About us</Link>
         {/* <a href="/about">About us</a> */}
+        <Link to="/users">Users</Link>
       </nav>
     </div>
   );
