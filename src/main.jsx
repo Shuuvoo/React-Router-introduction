@@ -51,15 +51,16 @@ const router = createBrowserRouter([
         element: <UserDetails></UserDetails>,
       },
       {
-        path:'/posts',
+        path: "/posts",
         loader: () => fetch(`https://jsonplaceholder.typicode.com/posts`),
-        element:<Posts></Posts>
+        element: <Posts></Posts>,
       },
       {
-        path:'/post/:postId',
-        loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/posts/${params.postId}`),
-        element:<PostDetails></PostDetails>
-      }
+        path: "/post/:postId",
+        loader: ({ params }) =>
+          fetch(`https://jsonplaceholder.typicode.com/posts/${params.postId}`),
+        element: <PostDetails></PostDetails>,
+      },
     ],
   },
   // {
